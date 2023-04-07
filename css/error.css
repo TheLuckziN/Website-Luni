@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --bg-color: #191919;
+    --secount-bg-color: #101010;
+    --main-color: #7474b2;
+    --text-color: #fff;
+    --second-color: #e4e4e4;
+    --other-color: #c6c9d8bf;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.page-not-found img {
+    height: 300px;
+}
+
+.page-not-found {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-not-found h1 {
+    font-family: 'Dosis', sans-serif;
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 50px 0px 0px 0px;
+}
+
+.page-not-found p {
+    padding-top: 1vh;
+    color: var(--second-color);
+    font-size: 1rem;
+    width: 60%;
+    text-align: center;
+    margin: 5px;
+    font-weight: 300;
+}
+
+.page-not-found p a {
+    color: var(--text-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.page-not-found button {
+    width: 140px;
+    height: 40px;
+    margin: 10px;
+    background: var(--main-color);
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all ease .50s;
+}
+
+.page-not-found a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+button:hover {
+    background: transparent;
+    transform: rotateY('-1rem');
+    border: 1px solid var(--main-color);
+}
+
+@media (max-width: 900px) {
+    .page-not-found img {
+        height: 180px;
+    }
+
+    .page-not-found p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 10px;
+    }
+
+    .page-not-found {
+        width: 100%;
+    }
+
+    .page-not-found img {
+        height: 120px;
+    }
+
+    .page-not-found h1 {
+        font-size: 1.4rem;
+    }
+
+    .page-not-found p {
+        width: 90%;
+    }
+}
